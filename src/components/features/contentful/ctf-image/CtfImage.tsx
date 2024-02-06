@@ -1,20 +1,7 @@
 import NextImage, { ImageProps as NextImageProps } from 'next/image';
 
 import { ImageFieldsFragment } from '@src/lib/__generated/sdk';
-
-// TODO: REMOVE HOTFIX >>>>>>>>
-// import { InspectorModeTags } from '@contentful/live-preview/dist/types';
-enum TagAttributes {
-  FIELD_ID = "data-contentful-field-id",
-  ENTRY_ID = "data-contentful-entry-id",
-  LOCALE = "data-contentful-locale"
-}
-type InspectorModeTags = {
-  [TagAttributes.ENTRY_ID]: string;
-  [TagAttributes.FIELD_ID]: string;
-  [TagAttributes.LOCALE]?: string;
-} | null;
-// TODO: REMOVE HOTFIX >>>>>>>>
+import { InspectorModeTags } from '@contentful/live-preview/dist/types';
 
 interface ImageProps extends ImageFieldsFragment {
   imageProps?: Omit<NextImageProps, 'src' | 'alt'>;
