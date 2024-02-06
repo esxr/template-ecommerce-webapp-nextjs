@@ -1,7 +1,7 @@
-import type { InspectorModeTags } from '@contentful/live-preview/dist/types';
 import NextImage, { ImageProps as NextImageProps } from 'next/image';
 
 import { ImageFieldsFragment } from '@src/lib/__generated/sdk';
+import { InspectorModeTags } from '@contentful/live-preview/dist/types';
 
 interface ImageProps extends ImageFieldsFragment {
   imageProps?: Omit<NextImageProps, 'src' | 'alt'>;
