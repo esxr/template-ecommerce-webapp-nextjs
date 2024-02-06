@@ -1,7 +1,11 @@
 import NextImage, { ImageProps as NextImageProps } from 'next/image';
 
 import { ImageFieldsFragment } from '@src/lib/__generated/sdk';
-import { InspectorModeTags } from '@contentful/live-preview/dist/types';
+
+// TODO: REMOVE HOTFIX >>>>>>>>
+// import { InspectorModeTags } from '@contentful/live-preview/dist/types';
+type InspectorModeTags = any;
+// TODO: REMOVE HOTFIX >>>>>>>>
 
 interface ImageProps extends ImageFieldsFragment {
   imageProps?: Omit<NextImageProps, 'src' | 'alt'>;
