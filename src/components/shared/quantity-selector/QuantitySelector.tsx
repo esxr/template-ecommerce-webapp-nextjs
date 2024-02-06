@@ -19,11 +19,20 @@ export const QuantitySelector = () => {
       <Flex flexDirection="row" mt={2}>
         <Input width={16} min={0} textAlign="center" type="number" defaultValue="1" />
         <Button
+          // snipcart data
+          class="snipcart-add-item"
+          data-item-id="starry-night"
+          data-item-price="79.99"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-image="/assets/images/starry-night.jpg"
+          data-item-name="The Starry Night"
+          // end snipcart data
           ml={2}
           variant="primary"
           rightIcon={
             <Box as={ShoppingCartIcon} width="18px" height="18px" fill="white" variant="white" />
-          }>
+          }
+          onClick={() => console.log('add to cart')}>
           {t('product.addToCart')}
         </Button>
       </Flex>
