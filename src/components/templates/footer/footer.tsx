@@ -19,8 +19,8 @@ export const Footer = () => {
         <Text mb={8}>{t('common.description2')}</Text>
         <Text variant="small">
           {t('common.poweredBy')}{' '}
-          <Link href="https://contentful.com" isExternal color={theme.f36.blue500}>
-            Contentful
+          <Link href="https://racingpigeon.co" isExternal color={theme.f36.blue500}>
+            Racing Pigeon
           </Link>
         </Text>
       </Container>
