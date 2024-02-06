@@ -20,7 +20,7 @@ export const QuantitySelector = () => {
         <Input width={16} min={0} textAlign="center" type="number" defaultValue="1" />
         <Button
           // snipcart data
-          class="snipcart-add-item"
+          className="snipcart-add-item"
           data-item-id="starry-night"
           data-item-price="79.99"
           data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
